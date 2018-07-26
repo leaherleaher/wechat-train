@@ -217,7 +217,7 @@ public class CoreServiceImpl implements CoreService {
                     article.setDescription("点击图文可以跳转到百度首页");
                     // 将图片置为空
                     article.setPicUrl("http://www.sinaimg.cn/dy/slidenews/31_img/2016_38/28380_733695_698372.jpg");
-                    article.setUrl("http://www.baidu.com");
+                    article.setUrl("http://kdktuh.natappfree.cc/wx/wxLogin");
                     articleList.add(article);
                     newsMessage.setArticleCount(articleList.size());
                     newsMessage.setArticles(articleList);
@@ -230,7 +230,7 @@ public class CoreServiceImpl implements CoreService {
                     article.setDescription("点击图文可以跳转到百度首页");
                     // 将图片置为空
                     article.setPicUrl("http://www.sinaimg.cn/dy/slidenews/31_img/2016_38/28380_733695_698372.jpg");
-                    article.setUrl("http://www.baidu.com");
+                    article.setUrl("http://kdktuh.natappfree.cc/wx/wxLogin");
                     articleList.add(article);
                     newsMessage.setArticleCount(articleList.size());
                     newsMessage.setArticles(articleList);
