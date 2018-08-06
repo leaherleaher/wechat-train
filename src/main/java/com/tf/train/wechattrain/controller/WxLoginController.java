@@ -21,7 +21,7 @@ public class WxLoginController {
     @RequestMapping(value = "/wxLogin", method = RequestMethod.GET)
     public void wxLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //定义成功回调地址
-        String backUrl = "http://kdktuh.natappfree.cc/wx/callBack";
+        String backUrl = "http://i9ke65.natappfree.cc/hello";
         //第一步 用户同意授权 获取code
         String url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + WXAuthUtil.APPID
                 + "&redirect_uri=" + URLEncoder.encode(backUrl,"UTF-8")

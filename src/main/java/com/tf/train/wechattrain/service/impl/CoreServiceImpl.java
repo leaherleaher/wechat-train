@@ -95,7 +95,7 @@ public class CoreServiceImpl implements CoreService {
                             // 图文消息中可以使用QQ表情、符号表情
                             article.setDescription("这是测试有没有换行\n\n如果有空行就代表换行成功\n\n点击图文可以跳转到百度首页");
                             // 将图片置为空
-                            article.setPicUrl("http://www.sinaimg.cn/dy/slidenews/31_img/2016_38/28380_733695_698372.jpg");
+                            article.setPicUrl("img/a.jpg");
                             article.setUrl("http://www.baidu.com");
                             articleList.add(article);
                             newsMessage.setArticleCount(articleList.size());
@@ -134,7 +134,9 @@ public class CoreServiceImpl implements CoreService {
 
                         case "13": {
                             //测试网址回复
-                            respContent = "<a href=\"http://www.baidu.com\">百度主页</a>";
+                            //respContent = "<a href=\"http://www.baidu.com\">百度主页</a>";
+                            respContent = "<a href=\"http://i9ke65.natappfree.cc/wx/wxLogin\">百度主页11</a>";
+
                             textMessage.setContent(respContent);
                             // 将文本消息对象转换成xml字符串
                             respMessage = MessageUtil.textMessageToXml(textMessage);

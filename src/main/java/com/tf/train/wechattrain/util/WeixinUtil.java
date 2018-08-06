@@ -1,5 +1,6 @@
 package com.tf.train.wechattrain.util;
 
+import com.tf.train.wechattrain.config.Contants;
 import com.tf.train.wechattrain.model.AccessToken;
 import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
@@ -109,6 +110,8 @@ public class WeixinUtil {
                 accessToken = new AccessToken();
                 accessToken.setToken(jsonObject.getString("access_token"));
                 accessToken.setExpiresIn(jsonObject.getInt("expires_in"));
+                Contants.ACCESS_TOKEN = jsonObject.getString("access_token");
+                Contants.ticket_expires_in = jsonObject.getInt("expires_in");
             } catch (JSONException e) {
                 accessToken = null;
                 // 获取token失败
